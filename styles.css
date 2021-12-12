@@ -28,9 +28,27 @@
     padding: 0 50px;
 }
 
+/* If text */
 #navbar__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to right, #f997cc, #fe67d7, 
+    #fea8ff, #ffacff, #ffe38d, #ffbc9f, #63f980, #6a92fc, #76c5dd);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+/* If img */
+#navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #f997cc, #fe67d7, 
+    #fea8ff, #ffacff, #ffe38d, #ffbc9f, #63f980, #6a92fc, #76c5dd);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -282,7 +300,7 @@
     width: 100%;
 }
 
-.main__content h1 {
+.about__content h1 {
     font-size: 2rem;
     background-color: #fe3b6f;
     background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
@@ -295,18 +313,14 @@
     margin-bottom: 32px;
 }
 
-.main__content p {
+.about__content p {
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    background-color: rgb(17, 20, 221)f;
-    background-image: linear-gradient(to top, #ff087b 0%, #1e1aed 100%);
-    background-size: 100%;
+    font-size: 1rem;
+    font-weight: 400;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-transform: uppercase;
+    -webkit-text-fill-color: black;
+    -moz-text-fill-color: black;
     margin-bottom: 32px;
 }
 
@@ -353,14 +367,16 @@
     width: 100%;
 }
 
-.main__img--container {
+.about__img--container {
     text-align: center;
 }
 
-.main__img--card {
+.about__img--card {
     margin: 10px;
-    height: 500px;
-    width: 500px;
+    max-height: 20vw;
+    height: auto;
+    max-width: 20vw;
+    width: auto;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
